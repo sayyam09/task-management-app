@@ -6,7 +6,7 @@ const TaskForm = ({ setShowModal, fetchTasks }) => {
 
   const createTask = async (e) => {
     e.preventDefault();
-    await fetch('https://task-management-app-frontend-hazel.vercel.app/api/tasks', {
+    await fetch('https://task-management-app-backend-eight.vercel.app/api/tasks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
