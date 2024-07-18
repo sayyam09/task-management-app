@@ -21,7 +21,7 @@ const HomePage = () => {
   const fetchTasks = async () => {
     try{
       setLoading(true); // Start loading
-      const response = await fetch('/api/tasks');
+      const response = await fetch('https://task-management-app-backend-eight.vercel.app/api/tasks');
       const data = await response.json();
       setTasks(data);
     }catch (error) {
