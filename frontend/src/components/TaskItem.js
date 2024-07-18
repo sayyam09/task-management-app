@@ -15,7 +15,7 @@ const TaskItem = ({ task, fetchTasks }) => {
 
   const updateTaskStatus = async (status) => {
     console.log("\n selected status to update : ", status);
-    await fetch(`https://task-management-app-backend-eight.vercel.app/api/tasks/${task.id}`, {
+    await fetch(`/api/tasks/${task.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const TaskItem = ({ task, fetchTasks }) => {
   };
 
   const deleteTask = async () => {
-    await fetch(`https://task-management-app-backend-eight.vercel.app/api/tasks/${task.id}`, {
+    await fetch(`/api/tasks/${task.id}`, {
       method: 'DELETE',
     });
     fetchTasks();
