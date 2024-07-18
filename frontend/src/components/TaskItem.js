@@ -30,7 +30,7 @@ const TaskItem = ({ task, fetchTasks }) => {
   };
 
   const deleteTask = async () => {
-    await fetch(`/api/tasks/${task.id}`, {
+    await fetch(`https://task-management-app-backend-eight.vercel.app/api/tasks/${task.id}`, {
       method: 'DELETE',
     });
     fetchTasks();

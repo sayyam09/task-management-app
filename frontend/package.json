@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-   "proxy": "https://task-management-app-backend-eight.vercel.app",
+
    
   "eslintConfig": {
     "extends": [
